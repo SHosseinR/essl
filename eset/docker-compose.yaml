@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  eset:
+    build: .
+    container_name: eset
+    tmpfs:
+      - /tmp
+      - /run
+      - /run/lock
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - "D:/projects/eset/lkj.if:/licence/lkj.if"
+      - "C:/mirror/out/eset_upd:/updates/"
+    ports:
+      - 9443:9443
+    privileged: true  

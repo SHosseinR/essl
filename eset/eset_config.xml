@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<ESET>
+ <PRODUCT NAME="efs_unix" VERSION="11.0.228" EXPORTED_BY_CE="2147.3 (20241004); 2225">
+  <ITEM NAME="Runtime">
+   <ITEM NAME="Plugins">
+    <ITEM NAME="ODScand" />
+    <ITEM NAME="Sysinfod" />
+   </ITEM>
+  </ITEM>
+  <ITEM NAME="Settings">
+   <ITEM NAME="Automation">
+    <ITEM NAME="DetectionResponse">
+     <ITEM NAME="Malware">
+      <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+      <NODE NAME="Protection" TYPE="number" VALUE="14" />
+     </ITEM>
+     <ITEM NAME="Unwanted">
+      <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+      <NODE NAME="Protection" TYPE="number" VALUE="1" />
+     </ITEM>
+     <ITEM NAME="Suspicious">
+      <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+      <NODE NAME="Protection" TYPE="number" VALUE="14" />
+     </ITEM>
+     <ITEM NAME="Unsafe">
+      <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+      <NODE NAME="Protection" TYPE="number" VALUE="1" />
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="MaintenanceWindow">
+     <NODE NAME="WeekDayMask" TYPE="number" VALUE="7F" />
+     <NODE NAME="StartOffsetSeconds" TYPE="number" VALUE="EF10" />
+     <NODE NAME="EndOffsetSeconds" TYPE="number" VALUE="7080" />
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="Common">
+    <ITEM NAME="Log">
+     <NODE NAME="SyslogFacility" TYPE="number" VALUE="5" />
+     <NODE NAME="MinimumLogVerbosity" TYPE="number" VALUE="8" />
+    </ITEM>
+    <ITEM NAME="Proxy">
+     <ITEM NAME="Server">
+      <NODE NAME="Address" TYPE="string" VALUE="" />
+      <NODE NAME="Port" TYPE="number" VALUE="C38" />
+      <NODE NAME="EnableAuthentication" TYPE="number" VALUE="0" />
+      <NODE NAME="Username" TYPE="string" VALUE="" />
+      <NODE NAME="Password" TYPE="password" VALUE="" />
+     </ITEM>
+     <NODE NAME="ProxyEnabled" TYPE="number" VALUE="0" />
+     <NODE NAME="Fallback" TYPE="number" VALUE="1" />
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="ExclusionsManagement">
+    <ITEM NAME="PerformanceExclusions" DELETE="1" />
+    <ITEM NAME="DetectionExclusions" DELETE="1" />
+   </ITEM>
+   <ITEM NAME="LiveGrid">
+    <NODE NAME="LiveGridEnabled" TYPE="number" VALUE="1" />
+    <NODE NAME="DynamicDefenseEnabled" TYPE="number" VALUE="0" />
+    <NODE NAME="SubmitStatistics" TYPE="number" VALUE="1" />
+    <NODE NAME="ContactEmail" TYPE="string" VALUE="" />
+    <NODE NAME="SubmitManually" TYPE="number" VALUE="1" />
+    <NODE NAME="SubmitInfectedFiles" TYPE="number" VALUE="1" />
+    <NODE NAME="SubmitSuspiciousExecutables" TYPE="number" VALUE="1" />
+    <NODE NAME="SubmitSuspiciousArchives" TYPE="number" VALUE="1" />
+    <NODE NAME="SubmitSuspiciousScripts" TYPE="number" VALUE="1" />
+    <NODE NAME="SubmitSuspiciousOther" TYPE="number" VALUE="1" />
+    <NODE NAME="DeleteSuspiciousSamples" TYPE="number" VALUE="0" />
+    <NODE NAME="SubmitSuspiciousDocuments" TYPE="number" VALUE="0" />
+    <NODE NAME="DeleteSuspiciousDocumentSamples" TYPE="number" VALUE="1" />
+    <ITEM NAME="Exclusions" DELETE="1" />
+    <NODE NAME="DynamicDefenseThreshold" TYPE="number" VALUE="5A" />
+    <NODE NAME="DynamicDefenseAction" TYPE="number" VALUE="0" />
+    <NODE NAME="DynamicDefenseTimeout" TYPE="number" VALUE="5" />
+    <NODE NAME="SampleSizeMax" TYPE="number" VALUE="40" />
+    <NODE NAME="SubmitStatisticsChosen" TYPE="number" VALUE="0" />
+    <NODE NAME="SubmitCrashReports" TYPE="number" VALUE="1" />
+    <NODE NAME="LiveGridFeedbackEnabled" TYPE="number" VALUE="0" />
+    <NODE NAME="DynamicDefenseDownloadedSampleAction" TYPE="number" VALUE="0" />
+   </ITEM>
+   <ITEM NAME="PatchManagement">
+    <NODE NAME="Enabled" TYPE="number" VALUE="0" />
+    <NODE NAME="DiagnosticLoggingEnabled" TYPE="number" VALUE="0" />
+   </ITEM>
+   <ITEM NAME="Platform" />
+   <ITEM NAME="Plugins">
+    <ITEM NAME="Authd">
+     <ITEM NAME="Simple">
+      <NODE NAME="Enable" TYPE="number" VALUE="1" />
+      <NODE NAME="PasswordHash" TYPE="string" VALUE="pbkdf2#100000#dlbK5eXnWFzNjGjFKfyedfsYodVCwBFshu+BCBGqFUQ=#UBE0CtIgWIfh36kB1ZVGUsF1xZHhrZQMEAcihGn9UUE=" />
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="Confd">
+     <NODE NAME="NumThrd" TYPE="number" VALUE="4" />
+    </ITEM>
+    <ITEM NAME="Execd">
+     <NODE NAME="ShutdownTimerMinutes" TYPE="number" VALUE="3" />
+    </ITEM>
+    <ITEM NAME="GWScand">
+     <ITEM NAME="Antivirus">
+      <ITEM NAME="ThreatSense">
+       <ITEM NAME="SetupSession">
+        <NODE NAME="HeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="ArchiveEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="SfxEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="RtpEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="MailEnable" TYPE="number" VALUE="0" />
+        <ITEM NAME="ExcludeExtensions" DELETE="1" />
+        <NODE NAME="CleanLevel" TYPE="number" VALUE="2" />
+        <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+        <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+        <NODE NAME="FileLimitsUseDefaults" TYPE="number" VALUE="1" />
+        <NODE NAME="MaxScanFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="ScanObjectTimeout" TYPE="number" VALUE="0" />
+       </ITEM>
+      </ITEM>
+      <NODE NAME="Enable" TYPE="number" VALUE="1" />
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="Icap">
+     <ITEM NAME="EnableSocks">
+      <NODE NAME="Enable" TYPE="number" VALUE="0" />
+      <ITEM NAME="InetSocks" DELETE="1">
+       <ITEM NAME="1">
+        <NODE NAME="IpAddressOrHostname" TYPE="string" VALUE="0.0.0.0" />
+        <NODE NAME="Port" TYPE="number" VALUE="540" />
+       </ITEM>
+      </ITEM>
+     </ITEM>
+     <NODE NAME="PreviewEnable" TYPE="number" VALUE="1" />
+     <NODE NAME="PreviewSize" TYPE="number" VALUE="4000" />
+     <NODE NAME="IsilonCompatibilityEnable" TYPE="number" VALUE="0" />
+     <ITEM NAME="IcapsEnableSocks">
+      <NODE NAME="Enable" TYPE="number" VALUE="0" />
+      <ITEM NAME="InetSocks" DELETE="1">
+       <ITEM NAME="1">
+        <NODE NAME="IpAddressOrHostname" TYPE="string" VALUE="0.0.0.0" />
+        <NODE NAME="Port" TYPE="number" VALUE="2C50" />
+       </ITEM>
+      </ITEM>
+     </ITEM>
+     <NODE NAME="Password" TYPE="password" VALUE="" />
+     <NODE NAME="Certificate" TYPE="string" VALUE="" />
+     <NODE NAME="PrivateKey" TYPE="string" VALUE="" />
+    </ITEM>
+    <ITEM NAME="Logd">
+     <NODE NAME="EnableLifetime" TYPE="number" VALUE="1" />
+     <NODE NAME="Lifetime" TYPE="number" VALUE="5A" />
+     <NODE NAME="EnableOptimize" TYPE="number" VALUE="1" />
+     <NODE NAME="OptimizePercent" TYPE="number" VALUE="19" />
+    </ITEM>
+    <ITEM NAME="NPScand">
+     <ITEM NAME="WebScanner">
+      <ITEM NAME="ThreatSense">
+       <ITEM NAME="SetupSession">
+        <NODE NAME="HeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="ArchiveEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="SfxEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="RtpEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="MailEnable" TYPE="number" VALUE="0" />
+        <ITEM NAME="ExcludeExtensions" DELETE="1" />
+        <NODE NAME="CleanLevel" TYPE="number" VALUE="2" />
+        <NODE NAME="LogAllEnable" TYPE="number" VALUE="0" />
+        <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+        <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+        <NODE NAME="FileLimitsUseDefaults" TYPE="number" VALUE="1" />
+        <NODE NAME="MaxScanFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="ScanObjectTimeout" TYPE="number" VALUE="0" />
+        <NODE NAME="SmartEnable" TYPE="number" VALUE="1" />
+       </ITEM>
+      </ITEM>
+      <NODE NAME="Enable" TYPE="number" VALUE="1" />
+     </ITEM>
+     <ITEM NAME="EmailScanner">
+      <ITEM NAME="ThreatSense">
+       <ITEM NAME="SetupSession">
+        <NODE NAME="HeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="ArchiveEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="SfxEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="RtpEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="MailEnable" TYPE="number" VALUE="1" />
+        <ITEM NAME="ExcludeExtensions" DELETE="1" />
+        <NODE NAME="CleanLevel" TYPE="number" VALUE="2" />
+        <NODE NAME="LogAllEnable" TYPE="number" VALUE="0" />
+        <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+        <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+        <NODE NAME="FileLimitsUseDefaults" TYPE="number" VALUE="0" />
+        <NODE NAME="MaxScanFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="ScanObjectTimeout" TYPE="number" VALUE="0" />
+       </ITEM>
+       <ITEM NAME="MailModifications">
+        <NODE NAME="HeaderModificationEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="FootnoteModificationType" TYPE="number" VALUE="1" />
+        <NODE NAME="InfectedSubjectModificationEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="InfectedSubjectTemplate" TYPE="string" VALUE="[occurred detection %VIRUSNAME%]" />
+        <NODE NAME="SpamSubjectModificationEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="SpamSubjectTemplate" TYPE="string" VALUE="[SPAM]" />
+       </ITEM>
+      </ITEM>
+      <NODE NAME="Enable" TYPE="number" VALUE="1" />
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="OAEventd">
+     <ITEM NAME="EnableSocks">
+      <NODE NAME="Enable" TYPE="number" VALUE="1" />
+     </ITEM>
+     <ITEM NAME="Events">
+      <NODE NAME="Create" TYPE="number" VALUE="1" />
+      <NODE NAME="Open" TYPE="number" VALUE="1" />
+      <NODE NAME="Exec" TYPE="number" VALUE="1" />
+     </ITEM>
+     <ITEM NAME="ScanMedia">
+      <NODE NAME="Local" TYPE="number" VALUE="1" />
+      <NODE NAME="Removable" TYPE="number" VALUE="1" />
+      <NODE NAME="Network" TYPE="number" VALUE="1" />
+     </ITEM>
+     <ITEM NAME="ExcludedProcesses" DELETE="1" />
+    </ITEM>
+    <ITEM NAME="OAScand">
+     <ITEM NAME="Antivirus">
+      <ITEM NAME="Common">
+       <ITEM NAME="ThreatSense">
+        <ITEM NAME="SetupSession">
+         <NODE NAME="HeuristicsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="0" />
+         <NODE NAME="RtpEnable" TYPE="number" VALUE="0" />
+         <ITEM NAME="ExcludeExtensions" DELETE="1" />
+         <NODE NAME="CleanLevel" TYPE="number" VALUE="2" />
+         <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+         <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+         <NODE NAME="FileLimitsUseDefaults" TYPE="number" VALUE="1" />
+         <NODE NAME="MaxScanFileSize" TYPE="number" VALUE="0" />
+         <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+         <NODE NAME="ScanObjectTimeout" TYPE="number" VALUE="0" />
+         <NODE NAME="SmartEnable" TYPE="number" VALUE="1" />
+        </ITEM>
+       </ITEM>
+      </ITEM>
+      <ITEM NAME="Create">
+       <ITEM NAME="ThreatSense">
+        <ITEM NAME="SetupSession">
+         <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="SfxEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="RtpEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="LogAllEnable" TYPE="number" VALUE="0" />
+         <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+         <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+         <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+        </ITEM>
+       </ITEM>
+      </ITEM>
+      <ITEM NAME="Exec">
+       <ITEM NAME="ThreatSense">
+        <ITEM NAME="SetupSession">
+         <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+        </ITEM>
+       </ITEM>
+      </ITEM>
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="ODScand">
+     <NODE NAME="active" TYPE="string" VALUE="@In-depth scan" />
+     <ITEM NAME="profile" DELETE="1">
+      <ITEM NAME="1">
+       <NODE NAME="name" TYPE="string" VALUE="@In-depth scan" />
+       <ITEM NAME="ThreatSense">
+        <ITEM NAME="SetupSession">
+         <NODE NAME="HeuristicsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="SectorEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="ArchiveEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="SfxEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="RtpEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="MailEnable" TYPE="number" VALUE="0" />
+         <ITEM NAME="ExcludeExtensions" DELETE="1" />
+         <NODE NAME="CleanLevel" TYPE="number" VALUE="2" />
+         <NODE NAME="LogAllEnable" TYPE="number" VALUE="0" />
+         <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+         <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+         <NODE NAME="FileLimitsUseDefaults" TYPE="number" VALUE="1" />
+         <NODE NAME="MaxScanFileSize" TYPE="number" VALUE="0" />
+         <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+         <NODE NAME="ScanObjectTimeout" TYPE="number" VALUE="0" />
+         <NODE NAME="SmartEnable" TYPE="number" VALUE="0" />
+         <NODE NAME="AdsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="LowBackgroundPriority" TYPE="number" VALUE="1" />
+         <NODE NAME="PreserveFileTimesEnable" TYPE="number" VALUE="0" />
+        </ITEM>
+       </ITEM>
+       <NODE NAME="SymlinkEnable" TYPE="number" VALUE="1" />
+       <NODE NAME="UseGlobalDetectionResponse" TYPE="number" VALUE="1" />
+       <ITEM NAME="DetectionResponse">
+        <ITEM NAME="Malware">
+         <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+         <NODE NAME="Protection" TYPE="number" VALUE="14" />
+        </ITEM>
+        <ITEM NAME="Unwanted">
+         <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+         <NODE NAME="Protection" TYPE="number" VALUE="1" />
+        </ITEM>
+        <ITEM NAME="Suspicious">
+         <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+         <NODE NAME="Protection" TYPE="number" VALUE="14" />
+        </ITEM>
+        <ITEM NAME="Unsafe">
+         <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+         <NODE NAME="Protection" TYPE="number" VALUE="1" />
+        </ITEM>
+       </ITEM>
+      </ITEM>
+      <ITEM NAME="2">
+       <NODE NAME="name" TYPE="string" VALUE="@Smart scan" />
+       <ITEM NAME="ThreatSense">
+        <ITEM NAME="SetupSession">
+         <NODE NAME="HeuristicsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="SectorEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="ArchiveEnable" TYPE="number" VALUE="0" />
+         <NODE NAME="SfxEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="RtpEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="MailEnable" TYPE="number" VALUE="0" />
+         <ITEM NAME="ExcludeExtensions" DELETE="1" />
+         <NODE NAME="CleanLevel" TYPE="number" VALUE="2" />
+         <NODE NAME="LogAllEnable" TYPE="number" VALUE="0" />
+         <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+         <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+         <NODE NAME="FileLimitsUseDefaults" TYPE="number" VALUE="1" />
+         <NODE NAME="MaxScanFileSize" TYPE="number" VALUE="0" />
+         <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+         <NODE NAME="ScanObjectTimeout" TYPE="number" VALUE="0" />
+         <NODE NAME="SmartEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="AdsEnable" TYPE="number" VALUE="1" />
+         <NODE NAME="LowBackgroundPriority" TYPE="number" VALUE="1" />
+         <NODE NAME="PreserveFileTimesEnable" TYPE="number" VALUE="0" />
+        </ITEM>
+       </ITEM>
+       <NODE NAME="SymlinkEnable" TYPE="number" VALUE="1" />
+       <NODE NAME="UseGlobalDetectionResponse" TYPE="number" VALUE="1" />
+       <ITEM NAME="DetectionResponse">
+        <ITEM NAME="Malware">
+         <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+         <NODE NAME="Protection" TYPE="number" VALUE="14" />
+        </ITEM>
+        <ITEM NAME="Unwanted">
+         <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+         <NODE NAME="Protection" TYPE="number" VALUE="1" />
+        </ITEM>
+        <ITEM NAME="Suspicious">
+         <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+         <NODE NAME="Protection" TYPE="number" VALUE="14" />
+        </ITEM>
+        <ITEM NAME="Unsafe">
+         <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+         <NODE NAME="Protection" TYPE="number" VALUE="1" />
+        </ITEM>
+       </ITEM>
+      </ITEM>
+     </ITEM>
+     <ITEM NAME="Startup">
+      <NODE NAME="name" TYPE="string" VALUE="Startup" />
+      <ITEM NAME="ThreatSense">
+       <ITEM NAME="SetupSession">
+        <NODE NAME="HeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="AdvancedHeuristicsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="SectorEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="ArchiveEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="SfxEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="RtpEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="MailEnable" TYPE="number" VALUE="0" />
+        <ITEM NAME="ExcludeExtensions" DELETE="1" />
+        <NODE NAME="CleanLevel" TYPE="number" VALUE="2" />
+        <NODE NAME="ArchiveUseDefaults" TYPE="number" VALUE="1" />
+        <NODE NAME="MaxArchiveLevel" TYPE="number" VALUE="A" />
+        <NODE NAME="FileLimitsUseDefaults" TYPE="number" VALUE="1" />
+        <NODE NAME="MaxScanFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="MaxTempFileSize" TYPE="number" VALUE="0" />
+        <NODE NAME="ScanObjectTimeout" TYPE="number" VALUE="0" />
+        <NODE NAME="SmartEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="AdsEnable" TYPE="number" VALUE="1" />
+        <NODE NAME="PreserveFileTimesEnable" TYPE="number" VALUE="0" />
+       </ITEM>
+      </ITEM>
+      <NODE NAME="SymlinkEnable" TYPE="number" VALUE="1" />
+      <NODE NAME="UseGlobalDetectionResponse" TYPE="number" VALUE="1" />
+      <ITEM NAME="DetectionResponse">
+       <ITEM NAME="Malware">
+        <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+        <NODE NAME="Protection" TYPE="number" VALUE="14" />
+       </ITEM>
+       <ITEM NAME="Unwanted">
+        <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+        <NODE NAME="Protection" TYPE="number" VALUE="1" />
+       </ITEM>
+       <ITEM NAME="Suspicious">
+        <NODE NAME="Reporting" TYPE="number" VALUE="14" />
+        <NODE NAME="Protection" TYPE="number" VALUE="14" />
+       </ITEM>
+       <ITEM NAME="Unsafe">
+        <NODE NAME="Reporting" TYPE="number" VALUE="1" />
+        <NODE NAME="Protection" TYPE="number" VALUE="1" />
+       </ITEM>
+      </ITEM>
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="PCU">
+     <NODE NAME="RepositoryUrl" TYPE="string" VALUE="http://host.docker.internal/mirror/" />
+     <NODE NAME="RepositoryUsername" TYPE="string" VALUE="" />
+     <NODE NAME="RepositoryPassword" TYPE="password" VALUE="" />
+    </ITEM>
+    <ITEM NAME="Schedulerd">
+     <ITEM NAME="data" DELETE="1" />
+    </ITEM>
+    <ITEM NAME="Startd">
+     <NODE NAME="OnStartReloadCfgTries" TYPE="number" VALUE="6" />
+    </ITEM>
+    <ITEM NAME="Sysinfod">
+     <NODE NAME="EnableRemovableScan" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="Updated">
+     <ITEM NAME="Servers">
+      <ITEM NAME="Primary">
+       <NODE NAME="UseAutomatically" TYPE="number" VALUE="0" />
+       <NODE NAME="Url" TYPE="string" VALUE="http://host.docker.internal/mirror/" />
+       <NODE NAME="Username" TYPE="string" VALUE="" />
+       <NODE NAME="Password" TYPE="password" VALUE="" />
+      </ITEM>
+      <ITEM NAME="Secondary">
+       <NODE NAME="UseAutomatically" TYPE="number" VALUE="0" />
+       <NODE NAME="Url" TYPE="string" VALUE="http://host.docker.internal/mirror/" />
+       <NODE NAME="Username" TYPE="string" VALUE="" />
+       <NODE NAME="Password" TYPE="password" VALUE="" />
+      </ITEM>
+     </ITEM>
+     <NODE NAME="UpdateType" TYPE="number" VALUE="0" />
+     <ITEM NAME="Rollback">
+      <NODE NAME="Enable" TYPE="number" VALUE="1" />
+      <NODE NAME="NumSnapshots" TYPE="number" VALUE="1" />
+     </ITEM>
+     <NODE NAME="UseDefaultMaxDatabaseAge" TYPE="number" VALUE="1" />
+     <NODE NAME="MaxDatabaseAge" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="Wapd">
+     <ITEM NAME="Protoscan">
+      <NODE NAME="EmailProtectionEnabled" TYPE="number" VALUE="0" />
+      <NODE NAME="WebProtectionEnabled" TYPE="number" VALUE="1" />
+      <NODE NAME="TempCacheLimitPerFile" TYPE="number" VALUE="100000" />
+      <NODE NAME="TempCacheLimitTotal" TYPE="number" VALUE="6400000" />
+      <ITEM NAME="Ssl">
+       <NODE NAME="Enabled" TYPE="number" VALUE="1" />
+       <NODE NAME="BlockSslV2" TYPE="number" VALUE="1" />
+       <NODE NAME="ExcludeTrusted" TYPE="number" VALUE="1" />
+      </ITEM>
+      <ITEM NAME="Http">
+       <ITEM NAME="Base">
+        <NODE NAME="Enabled" TYPE="number" VALUE="1" />
+        <NODE NAME="Ports" TYPE="string" VALUE="80, 8080, 3128" />
+        <NODE NAME="Autodetect" TYPE="number" VALUE="1" />
+        <NODE NAME="SslEnabled" TYPE="number" VALUE="1" />
+        <NODE NAME="SslPorts" TYPE="string" VALUE="443, 0-65535" />
+       </ITEM>
+       <NODE NAME="AutoPassiveSize" TYPE="number" VALUE="800" />
+       <NODE NAME="AutoPassiveTime" TYPE="number" VALUE="37" />
+       <NODE NAME="StreamLimit" TYPE="number" VALUE="500000" />
+       <NODE NAME="AbsUriStrip" TYPE="number" VALUE="0" />
+       <NODE NAME="LogAllowed" TYPE="number" VALUE="0" />
+      </ITEM>
+      <ITEM NAME="Imap">
+       <ITEM NAME="Base">
+        <NODE NAME="Enabled" TYPE="number" VALUE="0" />
+        <NODE NAME="Ports" TYPE="string" VALUE="143" />
+        <NODE NAME="Autodetect" TYPE="number" VALUE="1" />
+        <NODE NAME="SslEnabled" TYPE="number" VALUE="1" />
+        <NODE NAME="SslPorts" TYPE="string" VALUE="585, 993" />
+       </ITEM>
+      </ITEM>
+      <ITEM NAME="Pop3">
+       <ITEM NAME="Base">
+        <NODE NAME="Enabled" TYPE="number" VALUE="0" />
+        <NODE NAME="Ports" TYPE="string" VALUE="110" />
+        <NODE NAME="Autodetect" TYPE="number" VALUE="1" />
+        <NODE NAME="SslEnabled" TYPE="number" VALUE="1" />
+        <NODE NAME="SslPorts" TYPE="string" VALUE="995" />
+       </ITEM>
+       <NODE NAME="WriteEnabled" TYPE="number" VALUE="1" />
+      </ITEM>
+      <NODE NAME="DumpToPcaps" TYPE="number" VALUE="0" />
+     </ITEM>
+     <ITEM NAME="EnableSocks">
+      <ITEM NAME="InetSocks" DELETE="1">
+       <ITEM NAME="1">
+        <NODE NAME="IpAddressOrHostname" TYPE="string" VALUE="127.0.0.1" />
+        <NODE NAME="Port" TYPE="number" VALUE="0" />
+       </ITEM>
+       <ITEM NAME="2">
+        <NODE NAME="IpAddressOrHostname" TYPE="string" VALUE="::1" />
+        <NODE NAME="Port" TYPE="number" VALUE="0" />
+       </ITEM>
+      </ITEM>
+     </ITEM>
+     <ITEM NAME="Ssl">
+      <NODE NAME="Mode" TYPE="number" VALUE="0" />
+      <NODE NAME="AddRootCertToBrowsers" TYPE="number" VALUE="1" />
+      <NODE NAME="AskIfCertIsNotTrusted" TYPE="number" VALUE="1" />
+      <NODE NAME="AskIfRootCertIsUnknown" TYPE="number" VALUE="0" />
+      <ITEM NAME="Applications" DELETE="1" />
+      <ITEM NAME="Certificates" DELETE="1" />
+     </ITEM>
+     <ITEM NAME="ExcludeApps" DELETE="1" />
+     <ITEM NAME="ExcludeIPs" DELETE="1" />
+     <ITEM NAME="UrlLists" DELETE="1">
+      <ITEM NAME="1">
+       <NODE NAME="Default" TYPE="number" VALUE="1" />
+       <NODE NAME="ListActive" TYPE="number" VALUE="1" />
+       <NODE NAME="ListType" TYPE="number" VALUE="2" />
+       <NODE NAME="ListName" TYPE="string" VALUE="@" />
+       <NODE NAME="ResIdListName" TYPE="number" VALUE="13170052" />
+       <NODE NAME="ListDescription" TYPE="string" VALUE="" />
+       <ITEM NAME="Addresses" DELETE="1" />
+       <NODE NAME="Severity" TYPE="number" VALUE="1" />
+      </ITEM>
+      <ITEM NAME="2">
+       <NODE NAME="Default" TYPE="number" VALUE="1" />
+       <NODE NAME="ListActive" TYPE="number" VALUE="1" />
+       <NODE NAME="ListType" TYPE="number" VALUE="1" />
+       <NODE NAME="ListName" TYPE="string" VALUE="@" />
+       <NODE NAME="ResIdListName" TYPE="number" VALUE="13170053" />
+       <NODE NAME="ListDescription" TYPE="string" VALUE="" />
+       <ITEM NAME="Addresses" DELETE="1" />
+       <NODE NAME="Severity" TYPE="number" VALUE="2" />
+      </ITEM>
+      <ITEM NAME="3">
+       <NODE NAME="Default" TYPE="number" VALUE="1" />
+       <NODE NAME="ListActive" TYPE="number" VALUE="1" />
+       <NODE NAME="ListType" TYPE="number" VALUE="0" />
+       <NODE NAME="ListName" TYPE="string" VALUE="@" />
+       <NODE NAME="ResIdListName" TYPE="number" VALUE="13170054" />
+       <NODE NAME="ListDescription" TYPE="string" VALUE="" />
+       <ITEM NAME="Addresses" DELETE="1" />
+       <NODE NAME="Severity" TYPE="number" VALUE="0" />
+      </ITEM>
+     </ITEM>
+     <ITEM NAME="BotnetProtection">
+      <NODE NAME="Enabled" TYPE="number" VALUE="1" />
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="Watchd">
+     <NODE NAME="Enable" TYPE="number" VALUE="1" />
+     <ITEM NAME="Services">
+      <ITEM NAME="ODScand">
+       <NODE NAME="RequestSendTimer" TYPE="number" VALUE="12C" />
+       <NODE NAME="TimeoutTimer" TYPE="number" VALUE="14" />
+      </ITEM>
+      <ITEM NAME="OAScand">
+       <NODE NAME="RequestSendTimer" TYPE="number" VALUE="12C" />
+       <NODE NAME="TimeoutTimer" TYPE="number" VALUE="14" />
+      </ITEM>
+      <ITEM NAME="OAKernelModule">
+       <NODE NAME="RequestSendTimer" TYPE="number" VALUE="12C" />
+       <NODE NAME="TimeoutTimer" TYPE="number" VALUE="14" />
+      </ITEM>
+      <ITEM NAME="Updated">
+       <NODE NAME="RequestSendTimer" TYPE="number" VALUE="E10" />
+       <NODE NAME="TimeoutTimer" TYPE="number" VALUE="14" />
+      </ITEM>
+      <ITEM NAME="NetworkManager">
+       <NODE NAME="RequestSendTimer" TYPE="number" VALUE="14" />
+       <NODE NAME="TimeoutTimer" TYPE="number" VALUE="A" />
+      </ITEM>
+      <ITEM NAME="Wapd">
+       <NODE NAME="RequestSendTimer" TYPE="number" VALUE="708" />
+       <NODE NAME="TimeoutTimer" TYPE="number" VALUE="A" />
+      </ITEM>
+      <ITEM NAME="NPScand">
+       <NODE NAME="RequestSendTimer" TYPE="number" VALUE="12C" />
+       <NODE NAME="TimeoutTimer" TYPE="number" VALUE="14" />
+      </ITEM>
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="Webd">
+     <ITEM NAME="EnableSocks">
+      <NODE NAME="Enable" TYPE="number" VALUE="1" />
+      <ITEM NAME="InetSocks" DELETE="1">
+       <ITEM NAME="1">
+        <NODE NAME="IpAddressOrHostname" TYPE="string" VALUE="0.0.0.0" />
+        <NODE NAME="Port" TYPE="number" VALUE="24E3" />
+       </ITEM>
+      </ITEM>
+     </ITEM>
+     <NODE NAME="Password" TYPE="password" VALUE="" />
+     <NODE NAME="Certificate" TYPE="string" VALUE="LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURoekNDQW0rZ0F3SUJBZ0lVV0FydUxOb3c5TXlVWG54bEk2M2Z6YTFSYUJRd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1V6RWJNQmtHQTFVRUNnd1NSVk5GVkN3Z2MzQnZiQzRnY3lCeUxtOHVNUjB3R3dZRFZRUUxEQlJGVTBWVQpJRk5sY25abGNpQlRaV04xY21sMGVURVZNQk1HQTFVRUF3d01aVFkyTkdNMFl6azRNMlV6TUI0WERUSTBNVEV3Ck1qQTNORFExTUZvWERUSTFNVEV3TWpBM05EUTFNRm93VXpFYk1Ca0dBMVVFQ2d3U1JWTkZWQ3dnYzNCdmJDNGcKY3lCeUxtOHVNUjB3R3dZRFZRUUxEQlJGVTBWVUlGTmxjblpsY2lCVFpXTjFjbWwwZVRFVk1CTUdBMVVFQXd3TQpaVFkyTkdNMFl6azRNMlV6TUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUFxaXV5CkNCWFFsaHcxbEFEWVJMdjJ0bmZIc0c5NXhzb1ovdDVybGVZb1VWcUxYQjZwT1hwUVlUc013SmdqTDNuOWhVaUEKVXg5YmtWK0h4cDBvQW5vKzNSSEJoUlJxZGVmRHZiQmg0RGFDZUFzM20xSHgzcUZHaE9JcGoveUxGNDJtUUR2aAorMkVJQzlRaDJzc3BMM3pUeFEwUkd4MW5ZemNyMjk0U3RRVW53SmVMQ3Jmc3ZNdExwT0h4ei92UE1xYy9Ma0JUCngvaU9vQjAyd3d1QjR0OTVZTWxpYmptTVpwZWw5L01aaEFqeFBEemFLREUrQ0wzNlhSR2tDTXpaOEJ6R29iOHIKT0ZMSFB2TGVKVGRxVE9QbTU1MTJKdk8zcC95YndJVDBZcitQdFNhbi85V0hnWUxkcVV4QjJKcVNwV3BocExnUgpFNURERlcyRENaaGxOVFhuSlFJREFRQUJvMU13VVRBZEJnTlZIUTRFRmdRVW1KVWM4Q3NyWEhTTkExaU0xMml1CklVbHlTTlV3SHdZRFZSMGpCQmd3Rm9BVW1KVWM4Q3NyWEhTTkExaU0xMml1SVVseVNOVXdEd1lEVlIwVEFRSC8KQkFVd0F3RUIvekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBTlhLdWQvTENMem5LMDhYQTUreEdBbkdCRWxLVwprNEsvVHdzcXEzcnpiNENIMkFsMGFmNWxEY2QzR3lCSjdJV2NrUktiTzdKVXZVVmh6TjB2VloyU0JuNXlUNXVUClc4UzdrK0JnbXk3YVF1N3dyYTdBWUx3K1Y5My8zc3llUG5EMnkxM0wvbGpSMEozWXVVblJXMFhrV0VqVVRrY3cKZC94QzlxQjVoV2RGd1d6U05jdEY2V2pJellGYjRZVkx0OE12cGgxNW5MSEh3THJiYTJYVFArcDNiNlhOQnQ3Zgp0Z3lHek1aR0cvajlaT0ZVYWlkZ1NMdGhYNXVDOW54SVgwTW1WUnRrOTcwRkpzVE1DWTZtN3Z1TTQvWW1KUlN0CnV1WS9rc0NKeDUxd211UDlicXRyZ1RiaFdPdy9UYXFRVWtORVlQOXlCTUdNQk1OQnlmRDZOUktEVXc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==" />
+     <NODE NAME="PrivateKey" TYPE="string" VALUE="LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2QUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktZd2dnU2lBZ0VBQW9JQkFRQ3FLN0lJRmRDV0hEV1UKQU5oRXUvYTJkOGV3YjNuR3lobiszbXVWNWloUldvdGNIcWs1ZWxCaE93ekFtQ012ZWYyRlNJQlRIMXVSWDRmRwpuU2dDZWo3ZEVjR0ZGR3AxNThPOXNHSGdOb0o0Q3plYlVmSGVvVWFFNGltUC9Jc1hqYVpBTytIN1lRZ0wxQ0hhCnl5a3ZmTlBGRFJFYkhXZGpOeXZiM2hLMUJTZkFsNHNLdCt5OHkwdWs0ZkhQKzg4eXB6OHVRRlBIK0k2Z0hUYkQKQzRIaTMzbGd5V0p1T1l4bWw2WDM4eG1FQ1BFOFBOb29NVDRJdmZwZEVhUUl6Tm53SE1haHZ5czRVc2MrOHQ0bApOMnBNNCtibm5YWW04N2VuL0p2QWhQUml2NCsxSnFmLzFZZUJndDJwVEVIWW1wS2xhbUdrdUJFVGtNTVZiWU1KCm1HVTFOZWNsQWdNQkFBRUNnZ0VBSnVBQ0ZTSkVxMUpJOUNXSVFwV05MRXlyV0JWelpMUTlZWkgyMG9FSW8yTXoKdElrRm9FMmV5TU9ZYTNRbUQ1M0hDcmlRSmswaTJsQlFZSkY4OXludHJBdTNJYnVUQVpuL2g5bGdWcndsTEo3bApabXgvUEp5cjAwWW1lQkFaeDNqeTZyZ3piVDNTdkg4SzkrU1RKVmZYT2l3OHhPeS85blMvWm9SeVVodmFJNzhyCmRLYmtqK25DaGVCMXZQUXBoRlBXdHh1eTFrdUZHYXNubjRJRkJhemczbjlOVUhoYnVubzlOdVFqU1NLaTZOaFEKdDY3T3VWc3BPZGc2dHluSGtMWFRnM2diVFBqK1Y0ZGxhSGV4MzE3cGpsMERPRk8waEludlFrWjUwMDJkalpMKwp2cjhPYXNkNnNrVVJNOVR6dkxPeWJtazAwTmdPakRVOVA2VUJDK1hzWVFLQmdRRGVXUlRUN3d5akcvMmlSL1pICkIwT3dtZUdDS1MrcW81WFdLUi93MU14bHBpRkxWQllEZGJCU3pxL1JkU0paUXJETW8vL2ZLTGplWFY3NXAwMlQKbHcwTmxkcVcrRWJTWXFnSElHa3dlei9RTTBSdUx3UkFqM3orTURjVitpYW96cUFCV0Z0ZUpvMjllRm9Ga1JHawoyM292MHQ0V25ST0FUNkg0SDRHWTArL2ZCUUtCZ1FERDdQNS8zKzJjNk5FWkhyUHNmUjJMZm4rRmQxMmdleTBBCkpNeU5rNGhyN0VaTDVoVW13T3FMY2JSbmtpN1Uwa25ibEVQdTJuS2I3ODRtcFBwYVV1WXRaQUtGN2JPNnYrZDIKWFk5TTYrZDhNY00xbTY0RGJqVVg4T1JFeXJZclRBaFlRSE9MdHcvMmZMQ1JWdWlNZ0k0cEJVQ3FnTjdZanZpZworbXcyWmg4aG9RS0JnR0wzSDNBZGJIQ0ZHdVZLUm5IaTU5d0pBZmlmUUZvaEthWUM4L2FMb05aMWxVZ2tDeEJMCko4b1R1T252eXZRVDNRR1kxV0NNall4YjN0UWNCVWwxNkJkdDViZGdscFU1MkRRajF1My9UYTNydzcrUEtjTmEKbW5YQkhDT3FEZDhBNlBMd1V1cWJHbWVFMC95NlR6SWpoa1VYQkVib2J5K2pRaUpnVTV5a2FKWEpBb0dBQS9JNgpEZ2xNbCtSNGtiRDBuc2JHV1pEcXNKMSszVVNkMjJyaVU5ZXMzNythaXR6UGdFQlNlUXlKUGF6TUZLMUhuNHlVCjhiS2tyRTlnTDVjVEU4Nm5wREpuZXBzWEM2UGgzWmgwMG0vTjhjcHV6QjJlbTZNVW5xN1RhaTlMREFRMEJ0TUYKZ01MbkoyZkxocUhoZlRMNXFnblpDNVljNXUrNlFrUEkraStFWVFFQ2dZQjNvaGFGQUlMbmZaTm5IdkRWcktiYQpCU1NzQlJhMUxzeEQ2bzk4akRuYjBoaE9STHNkWHh0VGZTMU1HaUNYVDU3SlZ2dWNJT1ZzaE1ZQnREL1ZIYjRQCnk2Q29SZzNNbWZ5VlMzR2tGTTBGRTk4MG1QSjBSYUN5aWFVeWExd1RPeGErQ0NoR0d6WXNWaDVORlRjL25SN3UKaDNDSTc0QWlSMkdxdGJZam9zNWs5dz09Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K" />
+     <ITEM NAME="UI">
+      <NODE NAME="Theme" TYPE="number" VALUE="0" />
+     </ITEM>
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="ProtectionStatus">
+    <ITEM NAME="LiveGridDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="LiveGridFeedbackDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="UnwantedAppsDetectionDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="RTFSDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="RTFSNonFunctional">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="WebAccessProtectionDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="WebAccessProtectionNonFunctional">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="EmailProtectionDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="EmailProtectionNonFunctional">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="AntiPhishingDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="WebAndEmailProtectionNonFunctional">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="IcapDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="DetectionEngineOutOfDateWarning">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="DetectionEngineOutOfDateError">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="ModuleUpdateSuspended">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="ProductNotActivated">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="LicenseExpireSoon">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="LicenseExpired">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="EDTDNotReachable">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="1" />
+    </ITEM>
+    <ITEM NAME="EDTDLicenseError">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="1" />
+    </ITEM>
+    <ITEM NAME="EDTDLimitedConnectivity">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="1" />
+    </ITEM>
+    <ITEM NAME="EDTDNotActivated">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="EDTDDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="SelinuxMissingDevelPackage">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="DeviceControlDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="DeviceControlNonFunctional">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="RestartRecommended">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="RestartRequired">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="OperatingSystemUpdatesAvailable">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="RTFSExtensionLoadNotAllowed">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="SecurityPlatformFullDiskAccessNotAllowed">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="RTFSExtensionFullDiskAccessNotAllowed">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="DeviceControlExtensionFullDiskAccessNotAllowed">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="WatchdogDisabled">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="WebAndEmailExtensionLoadNotAllowed">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="WebAndEmailConfigurationNotAllowed">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="WebAndEmailExtensionNotConfigured">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="SettingsMigrated">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="EulaNotAccepted">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="EulaUpdated">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="0" />
+    </ITEM>
+    <ITEM NAME="VulnerabilityManagementNonFunctional">
+     <NODE NAME="MuteInEra" TYPE="number" VALUE="0" />
+     <NODE NAME="MuteInGui" TYPE="number" VALUE="1" />
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="Updater">
+    <ITEM NAME="AcceptedEulas" DELETE="1">
+     <ITEM NAME="1">
+      <NODE NAME="Tag" TYPE="string" VALUE="EULA-PRODUCT-LG" />
+      <NODE NAME="Version" TYPE="string" VALUE="3537.0.2" />
+     </ITEM>
+    </ITEM>
+    <ITEM NAME="AcceptedPackages" DELETE="1" />
+    <ITEM NAME="AutoUpdates">
+     <NODE NAME="Enabled" TYPE="number" VALUE="1" />
+     <ITEM NAME="Groups">
+      <ITEM NAME="EndpointWindows">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+      <ITEM NAME="FileSecurityWindowsServer">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+      <ITEM NAME="FileSecuritySharePointServer">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+      <ITEM NAME="MailSecurityExchangeServer">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+      <ITEM NAME="MailSecurityDominoServer">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+      <ITEM NAME="EndpointLinux">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+      <ITEM NAME="ServerSecurityLinux">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+      <ITEM NAME="DesktopMac">
+       <NODE NAME="MaximumVersion" TYPE="string" VALUE="" />
+      </ITEM>
+     </ITEM>
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="VulnerabilityManagement">
+    <NODE NAME="Enabled" TYPE="number" VALUE="0" />
+    <NODE NAME="DiagnosticLoggingEnabled" TYPE="number" VALUE="0" />
+   </ITEM>
+  </ITEM>
+  <ITEM NAME="State">
+   <ITEM NAME="EnterpriseInspectorIntegration">
+    <NODE NAME="Enabled" TYPE="number" VALUE="0" />
+    <NODE NAME="Flags" TYPE="number" VALUE="0" />
+   </ITEM>
+   <ITEM NAME="Modules">
+    <ITEM NAME="Perseus">
+     <NODE NAME="QuarantineLastFixId" TYPE="number" VALUE="0" />
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="PatchManagement">
+    <ITEM NAME="UnpatchedApplications" DELETE="1" />
+    <ITEM NAME="RestartApplications" DELETE="1" />
+    <ITEM NAME="FailedPatches" DELETE="1" />
+    <NODE NAME="OpenAppsForcedPatchTime" TYPE="number" VALUE="0" />
+    <NODE NAME="RestartRegistered" TYPE="number" VALUE="0" />
+    <NODE NAME="AppToResumeInstall" TYPE="string" VALUE="" />
+   </ITEM>
+   <ITEM NAME="Platform">
+    <ITEM NAME="Info">
+     <NODE NAME="VersionId" TYPE="number" VALUE="B000000E40000" />
+     <NODE NAME="PreviousVersionId" TYPE="number" VALUE="0" />
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="Plugins">
+    <ITEM NAME="Licensed" />
+    <ITEM NAME="Webd">
+     <NODE NAME="IsFreshInstall" TYPE="number" VALUE="0" />
+     <ITEM NAME="LastProcessedVersion" DELETE="1">
+      <NODE NAME="1" TYPE="number" VALUE="B" />
+      <NODE NAME="2" TYPE="number" VALUE="0" />
+      <NODE NAME="3" TYPE="number" VALUE="E4" />
+      <NODE NAME="4" TYPE="number" VALUE="0" />
+     </ITEM>
+     <ITEM NAME="UI">
+      <NODE NAME="LastLogin" TYPE="number" VALUE="0" />
+     </ITEM>
+    </ITEM>
+   </ITEM>
+   <ITEM NAME="ProtectionStatus">
+    <ITEM NAME="RTFSEnabled" />
+    <ITEM NAME="RTFSWorking" />
+    <ITEM NAME="RTFSDisabled" />
+    <ITEM NAME="RTFSNonFunctional" />
+    <ITEM NAME="WebAccessProtectionDisabled" />
+    <ITEM NAME="WebAccessProtectionNonFunctional" />
+    <ITEM NAME="EmailProtectionDisabled" />
+    <ITEM NAME="EmailProtectionNonFunctional" />
+    <ITEM NAME="AntiPhishingDisabled" />
+    <ITEM NAME="WebAndEmailProtectionNonFunctional" />
+    <ITEM NAME="LiveGridEnabled" />
+    <ITEM NAME="LiveGridDisabled" />
+    <ITEM NAME="LiveGridFeedbackEnabled" />
+    <ITEM NAME="LiveGridFeedbackDisabled" />
+    <ITEM NAME="UnwantedAppsDetectionEnabled" />
+    <ITEM NAME="UnwantedAppsDetectionDisabled" />
+    <ITEM NAME="IcapEnabled" />
+    <ITEM NAME="IcapDisabled" />
+    <ITEM NAME="DetectionEngineUpToDate" />
+    <ITEM NAME="DetectionEngineOutOfDateWarning" />
+    <ITEM NAME="DetectionEngineOutOfDateError" />
+    <ITEM NAME="ModuleUpdateSuspended" />
+    <ITEM NAME="ProductNotActivated" />
+    <ITEM NAME="LicenseIsValid" />
+    <ITEM NAME="LicenseExpireSoon" />
+    <ITEM NAME="LicenseExpired" />
+    <ITEM NAME="EDTDNotReachable" />
+    <ITEM NAME="EDTDLicenseError" />
+    <ITEM NAME="EDTDLimitedConnectivity" />
+    <ITEM NAME="EDTDNotActivated" />
+    <ITEM NAME="EDTDDisabled" />
+    <ITEM NAME="EDTDEnabled" />
+    <ITEM NAME="SelinuxMissingDevelPackage" />
+    <ITEM NAME="DeviceControlEnabled" />
+    <ITEM NAME="DeviceControlFunctional" />
+    <ITEM NAME="DeviceControlDisabled" />
+    <ITEM NAME="DeviceControlNonFunctional" />
+    <ITEM NAME="RestartRequired" />
+    <ITEM NAME="RestartRecommended" />
+    <ITEM NAME="OperatingSystemUpdatesAvailable" />
+    <ITEM NAME="RTFSExtensionLoadNotAllowed" />
+    <ITEM NAME="SecurityPlatformFullDiskAccessNotAllowed" />
+    <ITEM NAME="RTFSExtensionFullDiskAccessNotAllowed" />
+    <ITEM NAME="DeviceControlExtensionFullDiskAccessNotAllowed" />
+    <ITEM NAME="WatchdogEnabled" />
+    <ITEM NAME="WatchdogDisabled" />
+    <ITEM NAME="WebAndEmailExtensionLoadNotAllowed" />
+    <ITEM NAME="WebAndEmailExtensionNotConfigured" />
+    <ITEM NAME="WebAndEmailConfigurationNotAllowed" />
+    <ITEM NAME="SettingsMigrated" />
+    <ITEM NAME="WebAccessProtectionEnabled" />
+    <ITEM NAME="WebAccessProtectionFunctional" />
+    <ITEM NAME="EulaNotAccepted" />
+    <ITEM NAME="EulaUpdated" />
+    <ITEM NAME="VulnerabilityManagementNonFunctional" />
+   </ITEM>
+   <ITEM NAME="VulnerabilityManagement">
+    <ITEM NAME="VulnerableApplications" DELETE="1" />
+    <ITEM NAME="DeviceOsVulnerabilities" DELETE="1" />
+    <NODE NAME="DatabaseRevision" TYPE="number" VALUE="0" />
+   </ITEM>
+  </ITEM>
+ </PRODUCT>
+</ESET>

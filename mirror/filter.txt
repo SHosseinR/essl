@@ -1,0 +1,3 @@
+{
+  "defaults": { "os_types": ["linux"] }
+}
